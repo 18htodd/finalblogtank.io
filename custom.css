@@ -1,0 +1,140 @@
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+  background-color:black;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+.jumbotron video {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width:100%;
+  height:100%;
+  /*  object-fit is not supported on IE  */
+  object-fit: cover;
+  opacity:0.5;
+  border-radius: 60px;
+}
+.jumbotron .container {
+  z-index: 2;
+  position: relative;
+  border-radius: 60px;
+}
+
+
+
+div {
+
+  margin-bottom: 10px;
+  }
+
+#firstgif {
+  border-radius: 10px
+}
+
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:500,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+.nav {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  background-color: #000000;
+  padding: 0 20px;
+  box-shadow: 0 10px 40px rgba(159, 162, 177, .8);
+  justify-content: center;
+}
+
+.nav-item {
+  color: #d8d7db;
+  padding: 20px;
+  text-decoration: none;
+  transition: .3s;
+  margin: 0 6px;
+  z-index: 1;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #dfe2ea;
+    border-radius: 8px 8px 0 0;
+    opacity: 0;
+    transition: .3s;
+  }
+}
+
+.nav-item:not(.is-active):hover:before {
+  opacity: 1;
+  bottom: 0;
+}
+
+
+.nav-item:not(.is-active):hover { color: #333; }
+
+.nav-indicator {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  transition: .4s;
+  height: 5px;
+  z-index: 1;
+  border-radius: 8px 8px 0 0;
+}
+
+@media (max-width: 580px) {
+  .nav { overflow: auto; }
+}
+
+#shermanone {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+#shermanthree {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+p {
+	font-family: Palatino, Palatino Linotype, Palatino LT STD,Book Antiqua, Georgia, serif;
+}
+
+h1 {
+  font-family: Lucida Sans Typewriter,Lucida Console,monaco,Bitstream Vera Sans Mono,monospace;
+
+}
+
+h2 {
+  font-family: Lucida Sans Typewriter,Lucida Console,monaco,Bitstream Vera Sans Mono,monospace;
+
+}
+
+#mark4 {
+  border-radius: 12px
+}
+
+#mark3 {
+  border-radius: 12px
+}
+
+#mark2 {
+  border-radius: 12px
+}
+
+#mark1 {
+  border-radius: 12px
+}
